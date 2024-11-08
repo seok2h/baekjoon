@@ -27,7 +27,7 @@ for i in range(2, 1000001):
         prime.append(i)
         for j in range(2 * i, 1000001, i):
             check[j] = 1
-            
+
 T = int(sys.stdin.readline())
 
 for _ in range(T):
