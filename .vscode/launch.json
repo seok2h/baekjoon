@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MSVC Debug",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\build\\${fileBasenameNoExtension}.exe",
+            "cwd": "${fileDirname}",
+            "stopAtEntry": false,
+            "preLaunchTask": "build",
+            "console": "externalTerminal"
+        }
+    ]
+}
