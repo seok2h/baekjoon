@@ -10,4 +10,6 @@ int main()
         cout << 1;
     else
         cout << 0;
+
+    return 0;
 }
