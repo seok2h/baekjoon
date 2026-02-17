@@ -20,12 +20,13 @@ $M$보다 짧은 길이의 단어의 경우 읽는 것만으로도 외울 수 �
 출력
 화은이의 단어장에 들어 있는 단어를 단어장의 앞에 위치한 단어부터 한 줄에 한 단어씩 순서대로 출력한다.
 '''
+import sys
 
-N, M = map(int, input().split())
+N, M = map(int, sys.stdin.readline().strip().split())
 wordbook = {}
 
 for i in range(N):
-    word = input()
+    word = sys.stdin.readline().strip()
 
     if len(word) >= M:
         if word in wordbook:
@@ -39,3 +40,4 @@ words, _ = zip(*new_wordbook)
 
 for w in words:
     print(w)
+
